@@ -85,7 +85,7 @@
 /* Header */
 
 	#header nav > ul > li a {
-		color: #fff;
+		color: color: #777;
 		display: inline-block;
 		text-decoration: none;
 		border: 0;
@@ -97,7 +97,7 @@
 		}
 
 	#header.alt {
-		color: #fff;
+		color: #777;
 	}
 
 		#header.alt nav > ul > li a:not(.button).icon:before {
@@ -157,5 +157,5 @@
 	}
 
 	#cta .formerize-placeholder {
-		color: #fff !important;
+		color: color: #777; !important;
 	}

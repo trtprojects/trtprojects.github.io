@@ -13,19 +13,36 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-		<link rel="icon" type="image/png" href="images/radiation.png"><!-- Major Browsers -->
-		<!--[if IE]><link rel="SHORTCUT ICON" href="images/radiation.png"/><![endif]--><!-- Internet Explorer-->
+		<link rel="icon" type="image/png" href="images/favicon.png"><!-- Major Browsers -->
+		<!--[if IE]><link rel="SHORTCUT ICON" href="images/favicon.png"/><![endif]--><!-- Internet Explorer-->
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 			<header id="header" class="alt">
-				<h1><a href="index.html">Dose Insight</a></h1>
+					<h1><a href="index.html">Dose Insight</a></h1>
+				
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+						<li>
+							<a href="about.html" class="icon solid fa-angle-down">About</a>
+							<ul>
+								<li><a href="about.html#story">Our Story</a></li>
+								<li><a href="about.html#management">Management</a></li>
+								<li><a href="about.html#advisors">Advisory Board</a></li>
+								<li><a href="about.html#careers">Careers</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="technology.html" class="icon solid fa-angle-down">Technology</a>
+							<ul>
+								<li><a href="technology.html">Our Tech</a></li>
+								<li><a href="technology.html#validation">Validation</a></li>
+								<li><a href="technology.html#white-papers">White Papers</a></li>
+							</ul>
+						</li>
                         <li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
@@ -34,9 +51,9 @@
             <!-- Banner -->
             <section id="banner">
                 <h2>DOSE INSIGHT</h2>
-                <h3>Eliminate sterilization validation failures</h3>
+                <h3>Virtual dose mapping for radiation sterilization</h3>
                 <ul class="actions">
-			<li><a href="#skills" class="button scrolly">Learn More</a></li>
+			<li><a href="#skills" class="button special scrolly">Learn More</a></li>
 			<li><a href="contact.html" class="button special scrolly">Contact Us</a></li>
                 </ul>
             </section>
@@ -46,14 +63,14 @@
 
 					<section class="box special">
 						<header class="major">
-							<h3>Modeling software for radiation sterilization.</h3>
-							<h3>Gamma.&nbsp;&nbsp;&nbsp;E-beam.&nbsp;&nbsp;&nbsp;X-Ray.&nbsp;&nbsp;&nbsp;We do it all.</h3>
+							<h2>Modeling software for radiation sterilization.</h2>
+							<h2>Gamma.&nbsp;&nbsp;&nbsp;E-beam.&nbsp;&nbsp;&nbsp;X-Ray.&nbsp;&nbsp;&nbsp;We do it all.</h2>
+							<p><img src="images/dosemap.png" width="100%"  alt="" /></p>
 							<p> Dose Insight's modeling software calculates the 3D dose map delivered during radiation sterilization.<br />
 								Powered by High Performance Computing (HPC) in the cloud, the simulations are fast and accurate.<br />
-								It is an ideal tool for medical device companies looking to retire the risk associated with sterilization.
+								It is an ideal tool for medical device companies looking to retire the risk associated with sterilization early.
 							</p>
 						</header>
-						<!--<span class="image featured"><img src="images/tech2.jpg" alt="" /></span>-->
 					</section>
 
 					<section id="skills" class="box special features">
@@ -99,7 +116,7 @@
 						<div class="6u 12u(narrower)">
 
 							<section class="box special">
-								<span class="image featured"><a href="contact.html"><img src="images/contact.jpg" alt="Contact" /></a></span>
+								<span class="image featured"><a href="contact.html"><img src="images/road_map.jpg" alt="Contact" /></a></span>
 								<h3>Contact</h3>
 								<p>We'd love to hear what you've been working on and the sterilization challenges you've been facing. Let us show you how Dose Insight can help.</p>
 								<ul class="actions">
@@ -112,13 +129,34 @@
 
 				</section>
 
+
+			<!-- CTA -->
+<!--			<section id="cta">
+
+				<h2>Sign up to learn more!</h2>
+				<p>Stay in the loop with the latest news from Dose Insight.<br>You can expect an update every month or so, and we will never sell your information.</p>
+
+				<form method="POST" action="https://script.google.com/macros/s/AKfycbw_IBve7f6Y5oLqAICuLOChkrnjzgm5pS9aiSOncFYLdoyANb6Lyns7_dxAG5zqi7E/exec">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-8 col-12-mobilep">
+							<input type="email" name="email" id="email" placeholder="Email Address" required/>
+						</div>
+						<div class="col-4 col-12-mobilep">
+							<input type="submit" value="Sign Up" class="fit" />
+						</div>
+					</div>
+				</form>
+
+			</section>
+
+-->
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/company/triple-ring-technologies" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; 2022 Dose Insight Inc. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li><a href="https://www.flaticon.com/free-icons/nuclear" title="nuclear icons">Nuclear icons created by Kiranshastry - Flaticon</a></li>
+						<li>&copy; 2022 Dose Insight Inc. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
