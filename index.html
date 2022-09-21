@@ -129,31 +129,41 @@
 
 				</section>
 
+				<script type="text/javascript">
+					function displaySubcribeSuccess() {
+						document.getElementById("submitsuccess").style.display = "block";
+
+						document.getElementById("mailingListForm").style.display = "none";
+					}
+				</script>
 
 			<!-- CTA -->
-<!--			<section id="cta">
+		<section id="cta">
 
-				<h2>Sign up to learn more!</h2>
-				<p>Stay in the loop with the latest news from Dose Insight.<br>You can expect an update every month or so, and we will never sell your information.</p>
+				<h2 id="submitsuccess" style="display:none;">Thank you for subscribing</h2>
 
-				<form method="POST" action="https://script.google.com/macros/s/AKfycbw_IBve7f6Y5oLqAICuLOChkrnjzgm5pS9aiSOncFYLdoyANb6Lyns7_dxAG5zqi7E/exec">
-					<div class="row gtr-50 gtr-uniform">
-						<div class="col-8 col-12-mobilep">
-							<input type="email" name="email" id="email" placeholder="Email Address" required/>
+				<div id="mailingListForm">
+					<h2>Sign up to learn more!</h2>
+					<p>Stay in the loop with the latest news from Dose Insight.<br>You can expect an update every month or so, and we will never sell your information.</p>
+					<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+					<form method="POST" target="dummyframe" onsubmit="displaySubcribeSuccess()" action="https://script.google.com/macros/s/AKfycby8pc7UTFsQaUTxvOOhMRVYHIQmOdOgln-whqxZjn85fgqhUEJZ76akA0ngPXR1kCzxmA/exec">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="email" name="email" id="email" placeholder="Email Address" required/>
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
 						</div>
-						<div class="col-4 col-12-mobilep">
-							<input type="submit" value="Sign Up" class="fit" />
-						</div>
-					</div>
-				</form>
-
+					</form>
+				</div>
 			</section>
 
--->
+
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="https://www.linkedin.com/company/triple-ring-technologies" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.linkedin.com/company/dose-insight/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; 2022 Dose Insight Inc. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
