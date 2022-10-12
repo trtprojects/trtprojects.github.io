@@ -1,0 +1,6 @@
+
+/* Create a ruleset for the root element of the document, e.g. everything under the <html> tag */
+:root {
+	--dose-insight-color: #EBAF44;
+  --dose-insight-font-color: black;
+  }
