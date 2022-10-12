@@ -3193,7 +3193,7 @@
 
 	#cta {
 		background: #444;
-		color: var(--dose-insight-color);
+		color: white;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
 	}
@@ -3214,7 +3214,7 @@
 		#cta .button {
 			box-shadow: none;
 			background: var(--dose-insight-color);
-			color: #444;
+			color: black;
 		}
 
 		#cta input[type="text"],
@@ -3222,8 +3222,8 @@
 		#cta input[type="email"],
 		#cta select,
 		#cta textarea {
-			color: #ffffff;
-			background: rgba(255, 255, 255, 0.15);
+			color: black;
+			background: white;
 			border: 0;
 		}
 
@@ -3236,23 +3236,23 @@
 			}
 
 		#cta ::-webkit-input-placeholder {
-			color: rgba(255, 255, 255, 0.75) !important;
+			color: black !important;
 		}
 
 		#cta :-moz-placeholder {
-			color: rgba(255, 255, 255, 0.75) !important;
+			color: black !important;
 		}
 
 		#cta ::-moz-placeholder {
-			color: rgba(255, 255, 255, 0.75) !important;
+			color: black !important;
 		}
 
 		#cta :-ms-input-placeholder {
-			color: rgba(255, 255, 255, 0.75) !important;
+			color: black !important;
 		}
 
 		#cta .formerize-placeholder {
-			color: rgba(255, 255, 255, 0.75) !important;
+			color: black !important;
 		}
 
 /* Wide */
