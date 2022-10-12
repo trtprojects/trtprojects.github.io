@@ -1812,7 +1812,7 @@
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #0563c1;
+		color: var(--dose-insight-color);
 		text-decoration: none;
 	}
 
@@ -2721,21 +2721,21 @@
 		input[type="button"].special,
 		.button.special {
 			background-color: var(--dose-insight-color);
-			color: #444 !important;
+			color: black !important;
 		}
 
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #ecaa96;
+				opacity: 0.75;
 			}
 
 			input[type="submit"].special:active,
 			input[type="reset"].special:active,
 			input[type="button"].special:active,
 			.button.special:active {
-				background-color: #e4886a;
+				opacity: 0.75;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2803,7 +2803,7 @@
 	}
 
 	#header {
-		background: #444;
+		background: black;
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -3192,7 +3192,7 @@
 /* CTA */
 
 	#cta {
-		background: #444;
+		background: black;
 		color: white;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
