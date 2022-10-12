@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
 @import url("global-properties.css");
 
 /*
@@ -1798,7 +1799,7 @@
 
 	body, input, select, textarea {
 		color: var(--dose-insight-font-color);
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
