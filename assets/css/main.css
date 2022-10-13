@@ -2815,6 +2815,10 @@
 		z-index: 10000;
 	}
 
+		#header img {
+			vertical-align: middle;
+		}
+
 		#header h1 {
 			color: inherit;
 			height: inherit;
@@ -2864,8 +2868,12 @@
 						border-radius: 6px;
 					}
 
+					#header nav > ul > li a:hover {
+						background-color: var(--dose-insight-color) !important;
+					}
+
 					#header nav > ul > li a:not(.button) {
-						color: var(--dose-insight-color);
+						color: white;
 						display: inline-block;
 						text-decoration: none;
 						border: 0;
@@ -2954,7 +2962,7 @@
 			}
 
 			#header.alt nav > ul > li.active a:not(.button) {
-				background-color: rgba(255, 255, 255, 0.2);
+				background-color: var(--dose-insight-color);
 			}
 
 			#header.alt input[type="submit"],
@@ -2979,10 +2987,12 @@
 				}
 
 	.dropotron {
-		background: #fff;
+		background: black;
+		color: white;
 		border-radius: 6px;
-		box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.065), inset 0 -1px 0 0 #fff, inset 0 0 0 1px rgba(229, 229, 229, 0.5);
-		list-style: none;
+		border-style: solid;
+		border-color: var(--dose-insight-color);
+		list-style: none; /* Remove bullet points from dropdown menu */
 		margin: calc(-0.5em + 1px) 0 0 1px;
 		padding: 0.5em 0;
 		width: 11em;
@@ -2998,7 +3008,7 @@
 				-ms-transition: none;
 				transition: none;
 				border: 0;
-				border-top: solid 1px #f2f2f2;
+				border-top: solid 1px var(--dose-insight-color);
 				color: inherit;
 				display: block;
 				padding: 0.15em 1em;
@@ -3008,17 +3018,20 @@
 				border-top: 0;
 			}
 
+			/* This controls the background and font color of the dropdown menu */
 			.dropotron li.active > a, .dropotron li.active > span, .dropotron li:hover > a, .dropotron li:hover > span {
 				background: var(--dose-insight-color);
 				color: #ffffff;
 			}
 
-		.dropotron.level-0 {
+			/* This controls where the dropdown menu is placed relative to the nav bar */
+		/* .dropotron.level-0 {
 			font-size: 0.9em;
 			margin: 1em 0 0 0;
-		}
+		} */
 
-			.dropotron.level-0:before {
+			/* This is a little diamond at the top of each dropdown menu */
+			/* .dropotron.level-0:before {
 				-moz-transform: rotate(45deg);
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
@@ -3036,21 +3049,27 @@
 				top: -0.375em;
 				width: 0.75em;
 				z-index: 0;
-			}
+			} */
 
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
-		background-color: var(--dose-insight-font-color);
-		background-image: url("images/overlay.png"), url("../../images/casey-horner-doseinsight.jpg");
-		background-position: top left,						top center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
+		background-attachment: scroll, fixed;
+		background-color: black;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Radial_Pattern-WEB_OPTIMIZED.jpg");
+		background-position: top left, top center;
+		background-repeat: repeat, no-repeat;
+		background-size: auto, cover;
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
+		font-size: large;
+		font-weight: 500;
 	}
+
+		#banner img {
+			vertical-align: middle;
+		}
 
 		#banner :last-child {
 			margin-bottom: 0;
@@ -3064,7 +3083,7 @@
 		#banner h2 {
 			font-size: 3.5em;
 			line-height: 1em;
-			margin: 0 0 0.5em 0;
+			margin: 0 0 0 0 !important;
 			padding: 0;
 		}
 
@@ -3078,9 +3097,8 @@
 		#banner input[type="button"],
 		#banner .button {
 			background-color: #fff;
-			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
 			color: var(--dose-insight-font-color);
-			min-width: 12em;
+			/* min-width: 12em; */
 		}
 
 			#banner input[type="submit"]:hover,
@@ -3196,6 +3214,7 @@
 		color: white;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Radial_Pattern-WEB_OPTIMIZED_flipped.jpg");
 	}
 
 		#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
