@@ -121,7 +121,7 @@
 								<h3>About</h3>
 								<p>Dose Insight was created to help medical device companies retire the risks associated with sterilization. Find out more about our story and where we are going.</p>
 								<ul class="actions">
-									<li><a href="about.html" class="button alt">Learn More</a></li>
+									<li><a href="about.html" class="button special">Learn More</a></li>
 								</ul>
 							</section>
 
@@ -133,7 +133,7 @@
 								<h3>Contact</h3>
 								<p>We'd love to hear what you've been working on and the sterilization challenges you've been facing. Let us show you how Dose Insight can help.</p>
 								<ul class="actions">
-									<li><a href="contact.html" class="button alt">Learn More</a></li>
+									<li><a href="contact.html" class="button special">Learn More</a></li>
 								</ul>
 							</section>
 
@@ -151,23 +151,21 @@
 				</script>
 
 			<!-- CTA -->
-		<section id="cta">
+			<section id="cta">
 
 				<h2 id="submitsuccess" style="display:none;">Thank you for subscribing!</h2>
 
 				<div id="mailingListForm">
+					
 					<h2>Sign up to learn more!</h2>
+					
 					<p>Stay in the loop with the latest news from Dose Insight.<br>You can expect an update every month or so, and we will never sell your information.</p>
+					
 					<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-					<form method="POST" target="dummyframe" onsubmit="displaySubcribeSuccess()" action="https://script.google.com/macros/s/AKfycby8pc7UTFsQaUTxvOOhMRVYHIQmOdOgln-whqxZjn85fgqhUEJZ76akA0ngPXR1kCzxmA/exec">
-						<div class="row gtr-50 gtr-uniform">
-							<div class="col-8 col-12-mobilep">
-								<input type="email" name="email" id="email" placeholder="Email Address" required/>
-							</div>
-							<div class="col-4 col-12-mobilep">
-								<input type="submit" value="Sign Up" class="fit" />
-							</div>
-						</div>
+					
+					<form class="email-subscription-form" method="POST" target="dummyframe" onsubmit="displaySubcribeSuccess()" action="https://script.google.com/macros/s/AKfycby8pc7UTFsQaUTxvOOhMRVYHIQmOdOgln-whqxZjn85fgqhUEJZ76akA0ngPXR1kCzxmA/exec">
+						<input id="email-input" type="email" name="email" id="email" placeholder="Email address" required/>
+						<input id="subcribe-button" type="submit" value="Subscribe" class="fit special" />
 					</form>
 				</div>
 			</section>

@@ -2870,6 +2870,7 @@
 
 					#header nav > ul > li a:hover {
 						background-color: var(--dose-insight-color) !important;
+						color: black !important;
 					}
 
 					#header nav > ul > li a:not(.button) {
@@ -2884,7 +2885,7 @@
                     }
 
 						#header nav > ul > li a:not(.button).icon:before {
-							color: #999;
+							color: white;
 							margin-right: 0.5em;
 						}
 
@@ -3021,7 +3022,7 @@
 			/* This controls the background and font color of the dropdown menu */
 			.dropotron li.active > a, .dropotron li.active > span, .dropotron li:hover > a, .dropotron li:hover > span {
 				background: var(--dose-insight-color);
-				color: #ffffff;
+				color: black;
 			}
 
 			/* This controls where the dropdown menu is placed relative to the nav bar */
@@ -3056,7 +3057,7 @@
 	#banner {
 		background-attachment: scroll, fixed;
 		background-color: black;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Radial_Pattern-WEB_OPTIMIZED.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../images/Radial_Pattern-WEB_OPTIMIZED.jpg");
 		background-position: top left, top center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -3214,7 +3215,7 @@
 		color: white;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Radial_Pattern-WEB_OPTIMIZED_flipped.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../images/Radial_Pattern-WEB_OPTIMIZED_flipped.jpg");
 	}
 
 		#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
@@ -3272,6 +3273,40 @@
 
 		#cta .formerize-placeholder {
 			color: black !important;
+		}
+
+	/* Put the subscribe button inside the email input following this
+	https://stackoverflow.com/questions/15314407/how-to-add-button-inside-input */
+	.email-subscription-form {
+		/* This bit sets up the horizontal layout */
+		display: flex;
+		flex-direction: row;
+		
+		/* This needs to be the same color as the email input so that they look like they are part of the same element */
+		background: white;
+
+		/* Round the corners */
+		border-radius: 6px;
+
+		/* The padding allows the white background to go encompass the submit button */
+		padding: 2px;
+	}
+
+		.email-subscription-form > input {
+			/* Tell the input to use all the available space */
+			flex-grow: 2;
+			/* And hide the input's outline, so the form looks like the outline */
+			border: none;
+		}
+
+		.email-subscription-form > input:focus {
+			/* removing the input focus blue box. Put this on the form if you like. */
+			outline: none;
+		}
+
+		#subcribe-button {
+			margin: 0 0 0 0 !important;
+			padding: 0 0 !important;
 		}
 
 /* Wide */
