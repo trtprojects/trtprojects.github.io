@@ -1990,6 +1990,10 @@
 			font-style: normal;
 		}
 
+		header.major p.no-border{
+			border-top: none !important;
+		}
+
 /* Form */
 
 	form {
@@ -3057,7 +3061,7 @@
 	#banner {
 		background-attachment: scroll, fixed;
 		background-color: black;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../images/Radial_Pattern-WEB_OPTIMIZED.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/Radial_Pattern-WEB_OPTIMIZED.jpg");
 		background-position: top left, top center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -3215,7 +3219,7 @@
 		color: white;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../images/Radial_Pattern-WEB_OPTIMIZED_flipped.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/Radial_Pattern-WEB_OPTIMIZED_flipped.jpg");
 	}
 
 		#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
