@@ -1,0 +1,61 @@
+
+.scrolling-words-header {
+  display: inline-block;
+}
+
+.scrolling-words-container {
+    display: inline-block;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.scrolling-words-box {
+    height: 3rem;
+    line-height: 1.2;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.scrolling-words-box ul {
+    padding: 0;
+    animation: scrollUp 10s infinite;
+}
+.scrolling-words-box ul li {
+    color: #EBAF44;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 3rem;
+    list-style: none;
+}
+
+/* Center scrolling words if on a phone/tablet */
+@media only screen and (max-width: 760px) {
+  .scrolling-words-box ul li {
+    justify-content: center;
+  }
+}
+
+/*
+Matlab code:
+itemCount = 8;
+offset = 3;
+for i = 1 : (itemCount - 1)
+    step = 100 / (itemCount - 1);
+    a = i * step - 10;
+    b = i * step;
+    transform = (-100 / itemCount) * i;
+    fprintf('%d%%, %d%% {transform: translateY(%d%%);}\n', round(a), round(b), round(transform) + offset);
+end
+*/
+
+/* For 8 items */
+@keyframes scrollUp {
+    4%, 14% {transform: translateY(-10%);}
+    19%, 29% {transform: translateY(-22%);}
+    33%, 43% {transform: translateY(-35%);}
+    47%, 57% {transform: translateY(-47%);}
+    61%, 71% {transform: translateY(-60%);}
+    76%, 86% {transform: translateY(-72%);}
+    90%, 100% {transform: translateY(-85%);}
+}

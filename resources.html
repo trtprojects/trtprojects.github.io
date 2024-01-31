@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-81HJKR7PNE"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-81HJKR7PNE');
+		</script>
+		<title>Resources — Dose Insight</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/favicon_orange.svg">
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header" class="dartext">
+				<h1><a href="index.html"><img src="images/lockup-Color=Orange-White, Size=Small.svg" width="100%"/></a></h1>
+				
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="about.html" class="icon solid fa-angle-down">About</a>
+							<ul>
+								<li><a href="about.html#story">Our story</a></li>
+								<li><a href="about.html#management">Management</a></li>
+								<li><a href="about.html#contact">Contact us</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="resources.html" class="icon solid fa-angle-down">Resources</a>
+							<ul>
+								<li><a href="resources.html#faq">FAQ</a></li>
+								<li><a href="resources.html#validation">Validation data</a></li>
+								<li><a href="resources.html#white-papers">Use cases</a></li>
+							</ul>
+						</li>
+						<li><a href="news.html">News & Events</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<section id="main" class="container">
+				<header>
+					<h2>Resources</h2>
+					<p>Science-backed virtual dose mapping</p>
+				</header>
+
+				<div class="box" id="faq">
+					<h3>Frequently asked questions</h3>
+					<p class="accordion">What is dose mapping?</p>
+					<div class="panel">
+						<i>Dose mapping</i> refers to the experimental measurement of the dose distribution delivered during radiation sterilization, as required by <a href="https://www.iso.org/standard/33952.html" target="_blank">ISO 11137</a>.
+						Practically, this measurement is performed by affixing multiple dosimeters to your packaged device, exposing the device to radiation, and then reading the dose measured by the dosimeters.
+						Because dose mapping requires physical devices, it can only occur after the device has been fully designed, packaged, and manufactured.
+					</div>
+
+					<p class="accordion">What is virtual dose mapping?</p>
+					<div class="panel">
+						<i>Virtual dose mapping</i> uses computer modeling to predict the dose distribution that would be delivered during radiation sterilization.
+						Unlock experimental dose mapping, which can only occur after a device has been fully designed and manufactured, virtual dose mapping can be performed as soon as a preliminary CAD model exists.
+						Because of this, it can be performed early in the product development cycle, which allowed medical device manufacturers to unlock the time and cost savings offered by <i>Design for Sterilization</i>.
+					</div>
+
+					<p class="accordion">What is Design For Sterilization?</p>
+					<div class="panel">
+						<i>Design for Sterilization (DFS)</i> is the process of designing medical devices and packaging with sterilization in mind in order to make sterilization validation easier.
+						Virtual dose mapping is a tool that can be used for DFS by studying the effect of design choices on the dose distribution that will be delivered during radiation sterilization.
+						Design for Sterilization is part of the concept of <a href="https://en.wikipedia.org/wiki/Design_for_X" target="_blank"><i>Design for X</i></a>, which includes Design for Manufacturing (DFM), Design for Assembly (DFA), and Design for Inspection (DFI).
+					</div>
+
+					<p class="accordion">How does Dose Insight do virtual dose mapping?</p>
+					<div class="panel">
+						Dose Insight calculates virtual dose maps using the <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">Monte Carlo method</a>, which has long been established as the “gold standard” in the scientific community for producing accurate and precise predictions of radiation dose.
+						Specifically, our simulations use the Monte Carlo toolkit <a href="https://geant4.web.cern.ch/" target="_blank">Geant4</a>, which has been developed by an international collaboration of physicists to ensure that it contains the most up-to-date understanding of radiation-matter interactions.
+					</div>
+
+					<p class="accordion">Can I trust virtual dose mapping?</p>
+					<div class="panel">
+						In the words of the Nobel Prize-winning physicist <a href="https://en.wikipedia.org/wiki/Richard_Feynman" target="_blank">Richard Feynman</a>,
+						<blockquote>If it disagrees with experiment, it's wrong. In that simple statement is the key to science.</blockquote>
+						True to that sentiment, we have extensively validated our simulation technology so that you know you can trust the virtual dose maps produced by Dose Insight.
+						Check out our <a href="resources.html#validation">validation data</a> to see for yourself!
+					</div>
+				</div>
+
+				<div class="box" id="validation">
+					<h3>Validation data</h3>
+
+					We performed a series of dosimeter measurements at a contract e-beam sterilizer.
+
+					<hr />
+
+					<h4>Aluminum wedge</h4>
+					<p><a href="https://www.iso.org/standard/66728.html" target="_blank">ISO/ASTM 51649</a> describes the standard way that qualification and routine processing is performed at e-beam sterilization facilities.
+						In it, it describes measuring the energy of the e-beam source by sandwiching a film dosimeter betweeen a pair of aluminum wedges.</p>
+
+					<p>We replicated this experimental geometry in Dose Insight's virtual dose mapping tool in order to compare the simulated dose-depth curve with that measured at a 7.5 MeV e-beam facility.</p>
+
+					<p>We found excellent agreement between the simulated and measured dose depth curves, with the simulated curve entirely contained within the experimental uncertainty (shown as the colored band in the figure below).
+						The most probable energy calculated from the measured and simulated dose depth curves agreed better than &lt;1%. This speaks to the predictive power of virtual dose mapping.</p>
+
+					<img src="images/aluminumwedge.png" width="100%"  alt="" />
+
+					<hr />
+
+					<h4>Acrylic cylinder</h4>
+					<img src="images/cylinderphantom.png" width="100%"  alt="" />
+					We performed measurements on an acrylic cylinder with film dosimeters placed on the circumference of the cylinder. The measured dose values are compared against simulations and we find excellent agreement.
+
+					<hr />
+
+					<h4>Acrylic steps</h4>
+					<img src="images/stephantom.png" width="100%"  alt="" />
+					Film dosimeters were placed on each step of an acrylic step phantom (the yellow squares show the locations of where the dosimeters were placed). The step phantom was then irradiated from the top with a 10 MeV e-beam. Excellent agreement between measurements and simulations is achieved. It is noticeable that the dose decreases on the top step. This is due to the fact that lower steps receive scatter from the adjacent steps.
+				</div>
+
+				<div class="box" id="white-papers">
+					<h3>Use cases</h3>
+
+					<p>
+						Curious to know more? Take a look at some of our white papers, or <a href="about.html#contact">get in touch</a> if you have any questions.
+					</p>
+					
+					<div class="table-wrapper">
+						<table>
+							<tbody>
+								<tr>
+									<td><h4>Optimizing the sterilization process with virtual dose mapping</h4></td>
+									<td><a href="white_papers/Dose Insight white paper - Sterilization process optimization with syringes.pdf" class="button special small" target="_blank">Read</a></td>
+								</tr>
+								<tr>
+									<td><h4>Design for Sterilization</h4></td>
+									<td><a href="white_papers/Dose Insight white paper - Virtual dose mapping as a design tool.pdf" class="button special small" target="_blank">Read</a></td>
+								</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/company/dose-insight/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2022-<script>document.write(new Date().getFullYear())</script>, Dose Insight Inc. All rights reserved.</li>
+					<li><a href="mailto:info@doseinsight.com">info@doseinsight.com</a></li>
+					<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/accordion.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollgress.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

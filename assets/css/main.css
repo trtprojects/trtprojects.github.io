@@ -1,4 +1,6 @@
 @import url("font-awesome.min.css");
+@import url("marquee.css");
+@import url("accordion.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
 @import url("global-properties.css");
@@ -1900,7 +1902,7 @@
 	blockquote {
 		border-left: solid 4px #e5e5e5;
 		font-style: italic;
-		margin: 0 0 2em 0;
+		margin: 1em 0 1em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
 
@@ -2305,6 +2307,25 @@
 					border-radius: 0 0 6px 6px;
 				}
 
+/* container */
+.box .responsive-three-columns {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* columns */
+.box .responsive-three-columns > * {
+    width:100%;
+    padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .box .responsive-three-columns > * {
+        width:calc(100% / 3);
+    }
+}
+
 /* Icon */
 
 	.icon {
@@ -2365,6 +2386,11 @@
 			.icon.major.accent5 {
 				background: #556e71;
 				color: #ffffff;
+			}
+
+			.icon.major.gold {
+				background: #EBAF44;
+				color: black;
 			}
 
 /* Image */
@@ -3000,7 +3026,7 @@
 		list-style: none; /* Remove bullet points from dropdown menu */
 		margin: calc(-0.5em + 1px) 0 0 1px;
 		padding: 0.5em 0;
-		width: 11em;
+		width: 12em;
 	}
 
 		.dropotron li {
