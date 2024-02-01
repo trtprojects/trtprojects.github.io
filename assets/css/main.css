@@ -1813,9 +1813,8 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: var(--dose-insight-color);
-		text-decoration: none;
+		text-decoration: underline;
 	}
 
 		a:hover {
@@ -2864,6 +2863,13 @@
 				color: var(--dose-insight-color);
 				font-weight: 400;
 				border: 0;
+			}
+
+			h3 a {
+				color: var(--dose-insight-color);
+				font-weight: 400;
+				border: 0;
+				text-decoration: underline;
 			}
 
 		#header nav {
