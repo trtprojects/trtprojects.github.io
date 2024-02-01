@@ -57,68 +57,61 @@
 
 				<header>
 					<h2>News & Events</h2>
-
 				</header>
 
+				<div class="box" id="fdaSbir">
+					<h3>Virtual dose mapping for radiation sterilization</h3>
+					<span class="image left"><img src="images/news/fdaphase2.png" alt="Announcement of Dose Insight being awarded a Phase II SBIR grant from the FDA" style="width:256px;"/></span>
+					<p>
+						This grant is in response to PA-22-176, an omnibus call from NIH, FDA, and CDC. Therein the FDA expresses the need to develop computer modelling tools that help with regulatory decision making.
+						Sterilization is the terminal step of medical device development, and sterilization validation is a regulatory requirement.
+						<span id="dots"></span>
+						<span id="readMore" style="display: none;">
+							We are developing a Monte Carlo modelling tool that can produce virtual dose maps for radiation sterilization, thereby helping medical companies make important decisions about sterilization that will also affect the regulatory pathway early in the medical device development cycle. As modelling only requires a CAD model of the device and not a manufactured device (which is required for dose mapping at a contract sterilizer), modelling can be used early to iterate on the design of the device and its packing. Such a modelling tool will allow medical device companies to shorten and derisk the design process with respect to sterilization.
+							Monte Carlo modelling libraries such as Geant4 have the ability to accurately model radiation transport and dose deposition. Because of this, Geant4 is widely used in high energy physics and radiation treatment, but so far it is rarely used for radiation sterilization. The reason for this is the lack of user friendliness, which stems from its flexible architecture and the slow simulation speeds. Furthermore, Geant4 does not provide the ability to load full CAD models, and thus makes it rather cumbersome to model entire medical devices. 
+							In Phase I of this FDA SBIR grant, we showed that Geant4 can be deployed in the cloud. We have developed a prototype of a web user interface to configure simulations and to review modeled results. Our cloud tool can load full CAD models and accurately reproduce measured dose maps. We showed a 100x increase of simulation speed compared to a single computer due to seamless scaling in the cloud.
+							In Phase II we will build on our accomplishments of Phase I and extend this tool to be capable of modeling dose maps from X-ray and gamma sterilization. We will develop parametric radiation source models that can be calibrated with qualification data provided by the contract sterilizer. We will refine our user interface and give the user the ability to compare the different radiation sterilization technologies. We will also implement the ability to model virtual dosimeters to facilitate direct comparison with measurements. In user studies we will show that the tool is user-friendly and can be used to streamline decisions necessary for regulatory filings. 
+							Our modelling tool will be geared towards engineers at medical device companies and does not require an advanced background in software engineering or radiation physics. Rather, the engineer will be guided through simple steps through the simulation process. The engineer can review the results in a user-friendly viewer and determine the dose uniformity ratio. We anticipate that our tool will offer significant benefits to the medical device development community.
+						</span>
+						<button class="button special small" onclick="readMoreFunction()" id="myBtn">Read more</button>
+					</p>
+				</div>
 
+				<div class="box" id="fermilab23">
+					<h3><a target="_blank" href="https://indico.fnal.gov/event/60757/attachments/170337/232804/230921FunkBadali.mp4">Fermilab presentation 2023</a></h3>
+					<span class="image left"><a target="_blank" href="https://indico.fnal.gov/event/60757/attachments/170337/232804/230921FunkBadali.mp4"><img src="images/news/Fermilab2023video.png" alt="Screenshot of a presentation that Dose Insight gave about virtual dose mapping at the 2023 Fermilab Medical Device Sterilization workshop" style="width:256px;"/></a></span>
+					<p>
+						We were fortunate to give a presentation entitled 'Finding the optimal sterilization configuration using simulations' at the <a href="https://indico.fnal.gov/event/60757/" target="_blank">2023 Medical Device Sterilization Workshop</a>. Please use the link to watch a video of our presentation!
+						<br><br>
+					</p>
+				</div>
 
-				<div class="row">
-					<div class="col-12">
+				<div class="box" id="fermilab22">
+					<h3><a target="_blank" href="https://indico.fnal.gov/event/55340/attachments/162100/214131/220923_Badali.mp4">Fermilab presentation 2022</a></h3>
+					<span class="image left"><a target="_blank" href="https://indico.fnal.gov/event/55340/attachments/162100/214131/220923_Badali.mp4"><img src="images/news/FermilabTalk.png" alt="Screenshot of a presentation that Dose Insight gave about virtual dose mapping at the 2022 Fermilab Medical Device Sterilization workshop" style="width:256px;"/></a></span>
+					<p>
+						<br><br>
+						<br><br>
+					</p>
+				</div>
 
-						<!-- Table -->
-							<section class="box" margin: auto id="management">
-	
-									<table>
-										<tbody>
-											<tr>
-												<td><img src="images/news/fdaphase2.png" alt="" style="width:512px;"/></td>
-												<td id="fermilab23">
-													<h4><b>Virtual dose mapping for radiation sterilization</b></h4>
-													<p>This grant is in response to PA-22-176, an omnibus call from NIH, FDA, and CDC. Therein the FDA expresses the need to develop computer modelling tools that help with regulatory decision making.
-														Sterilization is the terminal step of medical device development, and sterilization validation is a regulatory requirement. <span id="dots"></span><span id="readMore"> We are developing a Monte Carlo modelling tool that can produce virtual dose maps for radiation sterilization, thereby helping medical companies make important decisions about sterilization that will also af-fect the regulatory pathway early in the medical device development cycle. As modelling only requires a CAD model of the device and not a manufactured device (which is required for dose mapping at a contract sterilizer), modelling can be used early to iterate on the design of the device and its packing. Such a modelling tool will allow medical device companies to shorten and de-risk the design process with respect to sterilization.
-														Monte Carlo modelling libraries such as Geant4 have the ability to accurately model radiation transport and dose deposition. Because of this, Geant4 is widely used in high energy physics and radiation treatment, but so far it is rarely used for radiation sterilization. The reason for this is the lack of user friendliness, which stems from its flexible architecture and the slow simulation speeds. Furthermore, Geant4 does not provide the ability to load full CAD models, and thus makes it rather cumbersome to model entire medical devices. 
-														In Phase I of this FDA SBIR grant, we showed that Geant4 can be deployed in the cloud. We have developed a prototype of a web user interface to configure simulations and to review modeled results. Our cloud tool can load full CAD models and accurately reproduce measured dose maps. We showed a 100x increase of simula-tion speed compared to a single computer due to seamless scaling in the cloud.
-														In Phase II we will build on our accomplishments of Phase I and extend this tool to be capable of modeling dose maps from X-ray and gamma sterilization. We will develop parametric radiation source models that can be cal-ibrated with qualification data provided by the contract sterilizer. We will refine our user interface and give the user the ability to compare the different radiation sterilization technologies. We will also implement the ability to model virtual dosimeters to facilitate direct comparison with measurements. In user studies we will show that the tool is user-friendly and can be used to streamline decisions necessary for regulatory filings. 
-														Our modelling tool will be geared towards engineers at medical device companies and does not require an ad-vanced background in software engineering or radiation physics. Rather, the engineer will be guided through simple steps through the simulation process. The engineer can review the results in a user-friendly viewer and determine the dose uniformity ratio. We anticipate that our tool will offer significant benefits to the medical de-vice development community.
-													</span><button class="button special small" onclick="readMoreFunction()" id="myBtn">Read more</button></p>
-														 
-														 <style>#readMore {display: none;}</style>
-													
-												</td>
-											</tr>
-											<tr>
-												<td><a target="_blank" href="https://indico.fnal.gov/event/60757/attachments/170337/232804/230921FunkBadali.mp4"><span class="image"><img src="images/news/Fermilab2023video.png" alt="" style="width:512px;"/></span></a></td>
-												<td id="fermilab23">
-													<h4><b><a target="_blank" href="https://indico.fnal.gov/event/60757/attachments/170337/232804/230921FunkBadali.mp4">Fermilab presentation 2023</a></b></h4>
-													<p>Link to a video of our presentation 'Finding the optimal sterilization configuration using simulations' that we gave at the Medical Device Sterilization workshop  </p>
-												</td>
-											</tr>
-											<tr>
-											<td><a target="_blank" href="https://indico.fnal.gov/event/55340/attachments/162100/214131/220923_Badali.mp4"><span class="image"><img src="images/news/FermilabTalk.png" alt="" style="width:512px;"/></span></a></td>
-												
-											</tr>
-											<tr>	
-													<td><span class="image"><img src="images/news/ASTM22group5.png" alt="" style="width:256px;"/></span></td>
-												<td id="newstable">
-													<h4><b><a target="_blank" href="white_papers/News/Dose_Insight_ASTM_presentation.pdf">Talk at the ASTM committee week, New Orleans 2022</a></b></h4>
-													<p>We had the honor to present our thoughts on Design for Sterilization to the standards committee E61 (radiation processing). The talk was well recieved and sparked a very interesting discussion with lots of new inputs. We are sharing the slides 
-													<a target="_blank" href="white_papers/News/Dose_Insight_ASTM_presentation.pdf">here</a>. </p></span>
-												</td>
-											</tr>
-											<tr>
-												<td><span class="image"><img src="images/news/IMRP20.PNG" alt="" style="width:256px;"/></span></td>
-												<td id="newstable">
-													<h4><b><a target="_blank" href="https://www.youtube.com/watch?v=xQdQzHwUoHE">Plenary talk at IMRP 20</a></b></h4>       
-													<p>We shared our progress in developing our virtual dose mapping tool at IMRP in Bangkok in fall 2022. A pre-recorded version of the talk is
-													<a target="_blank"  href="https://www.youtube.com/watch?v=xQdQzHwUoHE">here</a>. </p></span>
-												</td>
-											</tr>
-											
-										</tbody>	
-									</table>
-							</section>
+				<div class="box" id="astm2022">
+					<h3><a target="_blank" href="white_papers/News/Dose_Insight_ASTM_presentation.pdf">Talk at the ASTM committee week, New Orleans 2022</a></h3>
+					<p>
+						<span class="image left"><img src="images/news/ASTM22group5.png" alt="The ASTM E61 committee on radiation processing" style="width:256px;"/></span>
+						We had the honor to present our thoughts on Design for Sterilization to the standards committee E61 (radiation processing). The talk was well recieved and sparked a very interesting discussion with lots of new inputs. We are sharing the slides <a target="_blank" href="white_papers/News/Dose_Insight_ASTM_presentation.pdf">here</a>.
+						<br><br>
+					</p>
+				</div>
 
-					</div>
+				<div class="box" id="imrp20">
+					<h3><a target="_blank" href="https://www.youtube.com/watch?v=xQdQzHwUoHE">Plenary talk at IMRP 20</a></h3>
+					<p>
+						<span class="image left"><img src="images/news/IMRP20.PNG" alt="Dose Insight's presentation at IMRP20 about virtual dose mapping for radiation sterilization" style="width:256px;"/></span>
+						We shared our progress in developing our virtual dose mapping tool at IMRP in Bangkok in fall 2022. A pre-recorded version of the talk is <a target="_blank"  href="https://www.youtube.com/watch?v=xQdQzHwUoHE">here</a>.
+						<br><br>
+						<br><br>
+					</p>
 				</div>
 
 			<!-- Footer -->
