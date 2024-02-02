@@ -1,10 +1,19 @@
 
+.marquee {
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+}
+
 .scrolling-words-header {
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
 }
 
 .scrolling-words-container {
-    display: inline-block;
+    /* display: inline-block; */
+    float: right;
     align-items: center;
     font-size: 2rem;
     font-weight: 600;
@@ -14,7 +23,7 @@
     line-height: 1.2;
     margin: auto;
     overflow: hidden;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
 }
 .scrolling-words-box ul {
     padding: 0;

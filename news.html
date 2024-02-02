@@ -31,7 +31,14 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="services.html">Work with us</a></li>
+						<li>
+							<a href="services.html" class="icon solid fa-angle-down">Work with us</a>
+							<ul>
+								<li><a href="services.html#how-it-works">How it works</a></li>
+								<li><a href="services.html#services">White glove services</a></li>
+								<li><a href="services.html#bespoke">Bespoke services</a></li>
+							</ul>
+						</li>
 						<li>
 							<a href="about.html" class="icon solid fa-angle-down">About</a>
 							<ul>
@@ -68,7 +75,7 @@
 						Sterilization is the terminal step of medical device development, and sterilization validation is a regulatory requirement.
 						<span id="dots"></span>
 						<span id="readMore" style="display: none;">
-							We are developing a Monte Carlo modelling tool that can produce virtual dose maps for radiation sterilization, thereby helping medical companies make important decisions about sterilization that will also affect the regulatory pathway early in the medical device development cycle. As modelling only requires a CAD model of the device and not a manufactured device (which is required for dose mapping at a contract sterilizer), modelling can be used early to iterate on the design of the device and its packing. Such a modelling tool will allow medical device companies to shorten and derisk the design process with respect to sterilization.
+							We are developing a Monte Carlo modelling tool that can produce virtual dose maps for radiation sterilization, thereby helping medical companies make important decisions about sterilization that will also affect the regulatory pathway early in the medical device development cycle. As modelling only requires a CAD model of the device and not a manufactured device (which is required for dose mapping at a contract sterilizer), modelling can be used early to iterate on the design of the device and its packing. Such a modelling tool will allow medical device companies to shorten and de-risk the design process with respect to sterilization.
 							Monte Carlo modelling libraries such as Geant4 have the ability to accurately model radiation transport and dose deposition. Because of this, Geant4 is widely used in high energy physics and radiation treatment, but so far it is rarely used for radiation sterilization. The reason for this is the lack of user friendliness, which stems from its flexible architecture and the slow simulation speeds. Furthermore, Geant4 does not provide the ability to load full CAD models, and thus makes it rather cumbersome to model entire medical devices. 
 							In Phase I of this FDA SBIR grant, we showed that Geant4 can be deployed in the cloud. We have developed a prototype of a web user interface to configure simulations and to review modeled results. Our cloud tool can load full CAD models and accurately reproduce measured dose maps. We showed a 100x increase of simulation speed compared to a single computer due to seamless scaling in the cloud.
 							In Phase II we will build on our accomplishments of Phase I and extend this tool to be capable of modeling dose maps from X-ray and gamma sterilization. We will develop parametric radiation source models that can be calibrated with qualification data provided by the contract sterilizer. We will refine our user interface and give the user the ability to compare the different radiation sterilization technologies. We will also implement the ability to model virtual dosimeters to facilitate direct comparison with measurements. In user studies we will show that the tool is user-friendly and can be used to streamline decisions necessary for regulatory filings. 
@@ -100,7 +107,7 @@
 					<h3><a target="_blank" href="white_papers/News/Dose_Insight_ASTM_presentation.pdf">Talk at the ASTM committee week, New Orleans 2022</a></h3>
 					<p>
 						<span class="image left"><img src="images/news/ASTM22group5.png" alt="The ASTM E61 committee on radiation processing" style="width:256px;"/></span>
-						We had the honor to present our thoughts on Design for Sterilization to the standards committee E61 (radiation processing). The talk was well recieved and sparked a very interesting discussion with lots of new inputs. We are sharing the slides <a target="_blank" href="white_papers/News/Dose_Insight_ASTM_presentation.pdf">here</a>.
+						We had the honor to present our thoughts on Design for Sterilization to the standards committee E61 (radiation processing). The talk was well received and sparked a very interesting discussion with lots of new inputs. We are sharing the slides <a target="_blank" href="white_papers/News/Dose_Insight_ASTM_presentation.pdf">here</a>.
 						<br><br>
 					</p>
 				</div>
