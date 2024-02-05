@@ -5139,3 +5139,11 @@
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
 			}
+
+
+
+.blog-date {
+	margin: 0;
+	font-style: italic;
+	color: #595959;
+}
