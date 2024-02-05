@@ -1822,7 +1822,7 @@
 		}
 
 	strong, b {
-		color: #646464;
+		color: #595959;
 		font-weight: 400;
 	}
 
@@ -1835,7 +1835,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #646464;
+		color: #595959;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 0.5em 0;
@@ -1947,7 +1947,7 @@
 	}
 
 	header p {
-		color: #999;
+		color: #595959;
 		position: relative;
 		margin: 0 0 1.5em 0;
 		font-style: italic;
@@ -2002,7 +2002,7 @@
 	}
 
 	label {
-		color: #646464;
+		color: #595959;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 300;
@@ -2166,27 +2166,27 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: #999 !important;
+		color: #595959 !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #999 !important;
+		color: #595959 !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #999 !important;
+		color: #595959 !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #999 !important;
+		color: #595959 !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: #999 !important;
+		color: #595959 !important;
 		opacity: 1.0;
 	}
 
@@ -2588,7 +2588,7 @@
 		}
 
 		table th {
-			color: #646464;
+			color: #595959;
 			font-size: 0.9em;
 			font-weight: 300;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2742,7 +2742,7 @@
 			input[type="reset"].alt.icon:before,
 			input[type="button"].alt.icon:before,
 			.button.alt.icon:before {
-				color: #999;
+				color: #595959;
 			}
 
 		input[type="submit"].special,
@@ -2917,7 +2917,7 @@
 					}
 
                     .darktext {
-                        color: #646464;
+                        color: #595959;
                     }
 
 						#header nav > ul > li a:not(.button).icon:before {
@@ -2991,7 +2991,7 @@
 		}
 
         #header.darktext {
-            color: #646464;
+            color: #595959;
         }
 
 			#header.alt nav > ul > li a:not(.button).icon:before {
